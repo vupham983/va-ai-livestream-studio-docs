@@ -20,6 +20,7 @@ Hệ thống gọi ra ngoài tới các dịch vụ đám mây khi cần (LLM, T
 
 - Dữ liệu từ nền tảng livestream (comment, sự kiện) được coi là đầu vào không tin cậy — phải qua Comment Engine phân loại trước khi bất kỳ module nào (đặc biệt AI Host, Automation) xử lý.
 - Thông tin xác thực (API key, token) tới từng nền tảng chỉ được Platform Adapter tương ứng truy cập — không module nghiệp vụ nào khác cần hoặc được phép đọc trực tiếp (xem NON_FUNCTIONAL_SCOPE.md — Security).
+- Trust Boundary áp dụng cho nội dung do khán giả tạo ra (comment, tin nhắn) — đi qua Comment Engine. Telemetry kết nối (trạng thái online/offline của nền tảng) không thuộc phạm vi này — Health Monitor nhận trực tiếp từ Platform Adapter vì đây là tín hiệu hạ tầng, không phải nội dung do người dùng tạo ra.
 
 ## Điều chương này không định nghĩa
 

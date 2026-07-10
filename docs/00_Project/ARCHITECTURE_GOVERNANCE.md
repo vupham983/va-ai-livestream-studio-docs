@@ -55,6 +55,12 @@ làm mâu thuẫn ngầm với sprint trước chưa kịp phát hiện.
 - Đảo ngược bất kỳ quyết định nào trong DOCUMENTATION_SYSTEM.md
   mục 6.
 
+Lưu ý phân biệt: thay đổi nội dung Product (Personas, Goals,
+Journeys, Use Cases...) do nghiên cứu người dùng hoặc quyết định
+kinh doanh KHÔNG bắt buộc ADR — ADR chỉ bắt buộc cho các trường
+hợp liệt kê ở trên. Thay đổi Product đã Frozen vẫn cần Approver
+duyệt lại và ghi rõ lý do thay đổi, nhưng không cần theo format ADR.
+
 ## 5. Definition of Done cho một tài liệu
 
 Một file được coi là Done khi:

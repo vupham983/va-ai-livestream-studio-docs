@@ -175,7 +175,7 @@ docs/
 
 ### 02_Architecture
 - **README.md** — mục lục Architecture Bible + **quy tắc tham chiếu giữa chương**: mỗi chương chỉ được tham chiếu chương có số nhỏ hơn hoặc bằng (tránh phụ thuộc vòng), thuật ngữ phải khớp `GLOSSARY.md`.
-- `chapters/00–08` — khung chương, **chưa viết nội dung** (đúng yêu cầu giai đoạn này). Thứ tự chương đã được sắp theo nguyên tắc: bối cảnh → domain lõi (Live Session) → ranh giới module → luồng dữ liệu → runtime → khả năng mở rộng → phục hồi lỗi → giới hạn nền tảng.
+- `chapters/00–08` — đã viết nội dung thật, Frozen từ Sprint 3 (xem docs/02_Architecture/). Thứ tự chương đã được sắp theo nguyên tắc: bối cảnh → domain lõi (Live Session) → ranh giới module → luồng dữ liệu → runtime → khả năng mở rộng → phục hồi lỗi → giới hạn nền tảng.
 
 ### 03_UI_UX
 Mỗi file mô tả **cấu trúc và hành vi** của một vùng UI, không mô tả pixel/màu cụ thể (đó là design system, không phải doc kiến trúc). `THEME.md` là SoT cho design tokens ở mức khái niệm; file thiết kế chi tiết (Figma...) chỉ được link, không copy.

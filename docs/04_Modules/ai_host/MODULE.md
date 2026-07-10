@@ -47,6 +47,7 @@ Một Content Generation Component — sinh nội dung nói không xác định 
 
 - Persona definition: giọng, phong cách, prompt nền — thuộc sở hữu Workspace, tái sử dụng giữa nhiều Live Session (Mission 6, Philosophy #3).
 - Knowledge Reference: tham chiếu tới voice, style, prompt, knowledge set liên quan — AI Host chỉ tham chiếu, không sở hữu nội dung Knowledge thật (hiện chưa có module Knowledge riêng trong 10 module).
+- LLM provider và API key — quản lý bởi module AI Host, không lộ ra module khác (NON_FUNCTIONAL_SCOPE.md — Security).
 
 ## Runtime State
 

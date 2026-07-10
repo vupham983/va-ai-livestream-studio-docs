@@ -15,4 +15,4 @@ Bản đồ điều hướng nhóm tài liệu sản phẩm. Thứ tự đọc:
 8. MVP_DEFINITION.md [SOURCE OF TRUTH] — tập con cho bản đầu tiên.
 9. FUTURE_VISION.md [CHỈ THAM CHIẾU] — định hướng dài hạn, không cam kết.
 
-Toàn bộ 01_Product đã Frozen. Mọi thay đổi sau thời điểm này phải đi qua ADR theo ARCHITECTURE_GOVERNANCE.md mục 4.
+Toàn bộ 01_Product đã Frozen. Mọi thay đổi sau thời điểm này phải qua đúng quy trình ở ARCHITECTURE_GOVERNANCE.md mục 4.

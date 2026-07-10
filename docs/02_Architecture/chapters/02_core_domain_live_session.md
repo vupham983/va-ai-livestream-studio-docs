@@ -43,6 +43,8 @@ hay không.
 
 ## Ranh giới sở hữu (Aggregate Boundary)
 
+Danh sách dưới đây minh hoạ khái niệm; danh mục đầy đủ và là Source of Truth duy nhất nằm ở 05_Data/RUNTIME_DATA.md.
+
 Thuộc sở hữu của Live Session (runtime, mất khi phiên Ended):
 - Instance Scene đang active.
 - Instance AI Host đang chạy trong phiên (persona được nạp, trạng

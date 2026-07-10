@@ -45,6 +45,8 @@ Health Monitor — theo dõi song song toàn bộ luồng trên, không nằm tr
 
 Media — cấu hình được Scene và AI Host tham chiếu khi cần tài nguyên hình ảnh/âm thanh, không nằm trong luồng runtime chính.
 
+Ghi chú: Live Session phát event trạng thái phiên (state machine) mà TOÀN BỘ 9 module còn lại đều subscribe — đây là quan hệ fan-out lớn nhất hệ thống, không vẽ hết các mũi tên trong sơ đồ trên để tránh rối, nhưng cần hiểu Live Session là upstream ngầm định của mọi module khác theo nghĩa trạng thái phiên.
+
 ## Ánh xạ năng lực sản phẩm → module phụ trách
 
 Bảng này là điểm nối một chiều giữa FUNCTIONAL_SCOPE.md (góc nhìn người dùng) và module kỹ thuật — theo đúng ranh giới đã thống nhất ở DOCUMENTATION_SYSTEM.md mục 7 (không nêu tên module trong FUNCTIONAL_SCOPE.md, ánh xạ đặt ở đây).

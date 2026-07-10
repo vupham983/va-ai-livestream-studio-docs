@@ -5,6 +5,8 @@ Status: Frozen
 
 Dữ liệu runtime tổng quát — tồn tại trong phạm vi một Live Session đang chạy, thuộc Aggregate Boundary (chương 02, ADR-0007). File này liệt kê từng loại Runtime Data theo module sở hữu; STATE.md tổng hợp toàn bộ Runtime Data này thành một bức tranh runtime duy nhất của phiên (xem STATE.md), QUEUE.md mô tả riêng cơ chế hàng đợi khi cần xử lý tuần tự.
 
+Đây là Source of Truth duy nhất cho danh mục Runtime Data theo module — 02_Architecture/chapters/02_core_domain_live_session.md chỉ minh hoạ khái niệm Aggregate Boundary, không lặp lại đầy đủ.
+
 ## Các loại Runtime Data theo module
 
 - Scene instance đang active — Scene.

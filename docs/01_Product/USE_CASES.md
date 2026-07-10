@@ -24,6 +24,11 @@ thống cảnh báo ngay và cho phép người vận hành chuyển sang Scene
 dự phòng hoặc tạm dừng nền tảng đó mà không ảnh hưởng các nền
 tảng khác đang live song song.
 
+Lưu ý: kịch bản đầy đủ (không ảnh hưởng các nền tảng khác) chỉ áp
+dụng khi hệ thống hỗ trợ đa nền tảng đồng thời — MVP chỉ có một
+Platform Adapter chạy nên phần "không ảnh hưởng adapter khác" chưa
+cần kiểm thử ở M1 (xem MVP_DEFINITION.md).
+
 ## UC4 — Tái sử dụng AI Host persona giữa nhiều phiên (liên quan
 Journey 2)
 
