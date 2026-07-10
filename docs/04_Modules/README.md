@@ -1,7 +1,7 @@
 # 04_Modules
 
 [CHỈ THAM CHIẾU]
-Status: Approved
+Status: Frozen
 
 Bản đồ 10 module và phụ thuộc giữa chúng. Chi tiết từng module nằm ở MODULE.md tương ứng — file này không lặp lại nội dung đó.
 

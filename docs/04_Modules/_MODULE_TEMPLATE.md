@@ -1,7 +1,7 @@
 # _MODULE_TEMPLATE
 
 [SOURCE OF TRUTH]
-Status: Approved
+Status: Frozen
 
 Khuôn bắt buộc cho mọi MODULE.md. Không thêm/bớt mục — nếu một mục không áp dụng, ghi "Không áp dụng" kèm lý do ngắn, không xoá mục.
 
