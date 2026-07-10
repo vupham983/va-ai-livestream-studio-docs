@@ -69,3 +69,29 @@ Khi hai tài liệu hoặc hai ý kiến mâu thuẫn nhau:
 PRINCIPLES.md (00_Project) là trọng tài cấp cao nhất. Nếu
 PRINCIPLES.md chưa đủ để phân xử, Approver quyết định và
 việc quyết định đó phải được ghi lại thành ADR.
+
+## 7. Ngoại lệ thứ tự Sprint (ghi nhận 2026-07-10)
+
+03_UI_UX được hoãn sau 06_Integrations và 07-09, khác thứ tự gốc
+ở DOCUMENTATION_SYSTEM.md mục 5. Lý do: 03_UI_UX cần quyết định
+thiết kế cụ thể (design tokens, layout thật) chưa sẵn sàng tại
+thời điểm này, trong khi 07-09 viết được ở mức nguyên tắc thuần
+tuý dựa trên Architecture đã Frozen, không phụ thuộc UI. 03_UI_UX
+vẫn ở dạng skeleton, sẽ hoàn thiện ở sprint riêng sau đó.
+
+## Trạng thái phiên bản tài liệu
+
+Trạng thái tổng thể: v1.0 Candidate — đã hoàn tất Sprint 1-9 (00_Project
+đến 09_Roadmap, trừ 03_UI_UX hoãn có chủ đích), chờ một vòng Cold
+Review trước khi đổi thành v1.0 Final.
+
+Cold Review: để bộ tài liệu "nghỉ" vài ngày làm việc, không chỉnh
+sửa trong thời gian đó, sau đó đọc lại toàn bộ như người chưa từng
+tham gia dự án. Nếu không phát hiện vấn đề lớn, đổi trạng thái
+thành v1.0 Final.
+
+Đề xuất chưa xử lý, dành cho v1.1 trở đi: Decision Log
+(docs/11_Decisions/) — ghi lịch sử các đề xuất/quyết định không
+nhất thiết thành ADR (ngày, ai đề xuất, đã review chưa, có thành
+ADR không, đã huỷ chưa). Chưa tạo thư mục này ở v1.0, vì đây là
+thay đổi cấu trúc tài liệu, không nên chèn vội vào cuối một sprint.

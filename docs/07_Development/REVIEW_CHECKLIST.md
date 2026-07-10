@@ -3,7 +3,7 @@
 [SOURCE OF TRUTH]
 Status: Frozen
 
-Checklist review code trước khi merge.
+Checklist review code trước khi merge — áp dụng 4 tiêu chí review kiến trúc (Correctness/Consistency/Extensibility/Technical Debt) được dùng làm khung đánh giá cho chính checklist này.
 
 ## Checklist
 - [ ] Code có khớp đúng Responsibility/Boundaries của module tương ứng ở 04_Modules/*/MODULE.md không?
