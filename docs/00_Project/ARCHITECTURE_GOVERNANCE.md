@@ -61,6 +61,10 @@ kinh doanh KHÔNG bắt buộc ADR — ADR chỉ bắt buộc cho các trường
 hợp liệt kê ở trên. Thay đổi Product đã Frozen vẫn cần Approver
 duyệt lại và ghi rõ lý do thay đổi, nhưng không cần theo format ADR.
 
+Mọi mục trong 10_ADR/PENDING_DECISIONS.md thuộc khu vực sắp code
+phải được resolve bằng ADR trước khi mở Sprint code tương ứng —
+đây là điều kiện bắt buộc, không phải khuyến nghị.
+
 ## 5. Definition of Done cho một tài liệu
 
 Một file được coi là Done khi:

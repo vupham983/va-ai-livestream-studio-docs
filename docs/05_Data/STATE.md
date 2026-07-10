@@ -12,7 +12,7 @@ Trạng thái hiện tại của một Live Session đang chạy — sống tron
 
 ## Nguyên tắc đồng bộ UI–Engine
 
-State là nguồn sự thật duy nhất, luôn sống ở Engine Process. UI Process hiển thị đúng bản mirror nhận qua IPC — nếu mất kết nối IPC tạm thời, UI hiển thị State cũ nhất đã biết kèm nhãn "có thể không mới nhất", không tự suy đoán trạng thái mới (nhất quán với health_monitor/MODULE.md — Recovery Strategy khi thiếu dữ liệu giám sát).
+State phản ánh đầy đủ Runtime Data hiện tại (xem RUNTIME_DATA.md — Source of Truth cho danh mục), luôn sống ở Engine Process. UI Process hiển thị đúng bản mirror nhận qua IPC — nếu mất kết nối IPC tạm thời, UI hiển thị State cũ nhất đã biết kèm nhãn "có thể không mới nhất", không tự suy đoán trạng thái mới (nhất quán với health_monitor/MODULE.md — Recovery Strategy khi thiếu dữ liệu giám sát).
 
 ## Quan hệ với Cache
 

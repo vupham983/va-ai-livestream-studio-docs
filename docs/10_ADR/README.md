@@ -20,6 +20,8 @@ Mục lục ADR. ADR bất biến sau khi Accepted — sửa quyết định = t
 
 Chưa có ADR nào bị Superseded tính đến thời điểm này.
 
+Xem thêm: PENDING_DECISIONS.md — danh sách quyết định kỹ thuật chưa giải quyết, bắt buộc resolve trước khi code khu vực liên quan.
+
 ## Điều file này không định nghĩa
 
 Không lặp lại nội dung Context/Decision/Alternatives/Consequences của từng ADR — đọc file ADR tương ứng.
