@@ -1,7 +1,7 @@
 # Automation — MODULE
 
 [SOURCE OF TRUTH]
-Status: Approved
+Status: Frozen
 
 ## Purpose
 
