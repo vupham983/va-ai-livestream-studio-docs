@@ -1,0 +1,14 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/temp files
+*.tmp
+*.bak
+*.swp
+~$*
+
+# Local environment (nếu về sau có thêm tool/script trong thư mục này)
+.env
+node_modules/
