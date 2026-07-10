@@ -10,7 +10,7 @@ Status: Draft
 
 ## Decision
 
-Tách 4 loại message, cùng lưu thông qua Event Bus, khác nhau về routing/contract:
+Tách 4 loại message, được truyền qua messaging infrastructure của hệ thống (gọi chung là Event Bus trong phạm vi Bible này, không ngụ ý đây là nơi lưu trữ lâu dài), khác nhau về routing/contract:
 
 - **Command**: đích danh MỘT module, bắt buộc có phản hồi (success/failure). Con đường DUY NHẤT thay đổi state của module khác.
 - **Event**: thông báo sự kiện đã xảy ra, không yêu cầu phản hồi, một producer nhiều subscriber (giữ nguyên ADR-0004).
@@ -31,5 +31,5 @@ Mỗi message type CHỈ được định nghĩa (tên, loại trong 4 loại, p
 ## Consequences
 
 - 05_Data/EVENT.md (Frozen) cần bổ sung section tham chiếu ADR-0010, không xoá nội dung cũ.
-- 05_Data/MESSAGE_CATALOG.md (file mới) trở thành Source of Truth cho toàn bộ message type trong hệ thống; mọi MODULE.md hiện có cần rà soát lại để đảm bảo không tự định nghĩa trùng.
+- 05_Data/MESSAGE_CATALOG.md (file mới) trở thành Source of Truth cho toàn bộ message type trong hệ thống; mọi MODULE.md hiện có cần rà soát lại để đảm bảo không tự định nghĩa trùng. **MESSAGE_CATALOG.md phải tồn tại và đầy đủ TRƯỚC KHI Sprint 1 bắt đầu — đây là entry condition bổ sung cho Sprint 1 (cùng cấp với các entry condition đã ghi ở IMPLEMENTATION_ORDER.md), không phải việc làm dần trong lúc code.**
 - PENDING_DECISIONS.md mục "Command/Event/Query/Stream" → "Draft — chờ review, xem ADR-0010".
