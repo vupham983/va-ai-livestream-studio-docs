@@ -91,17 +91,19 @@ vẫn ở dạng skeleton, sẽ hoàn thiện ở sprint riêng sau đó.
 
 ## Trạng thái phiên bản tài liệu
 
-Trạng thái tổng thể: v1.0 Candidate — đã hoàn tất Sprint 1-9 (00_Project
-đến 09_Roadmap, trừ 03_UI_UX hoãn có chủ đích), chờ một vòng Cold
-Review trước khi đổi thành v1.0 Final.
+Trạng thái tổng thể: v1.0 Final — đã hoàn tất toàn bộ 11 nhóm tài
+liệu (00_Project đến 03_UI_UX), tất cả Frozen.
 
-Cold Review: để bộ tài liệu "nghỉ" vài ngày làm việc, không chỉnh
-sửa trong thời gian đó, sau đó đọc lại toàn bộ như người chưa từng
-tham gia dự án. Nếu không phát hiện vấn đề lớn, đổi trạng thái
-thành v1.0 Final.
+Cold Review: đã hoàn thành qua 2 vòng audit độc lập (2026-07-10) —
+một phiên Claude mới không mang lịch sử quyết định, và ChatGPT —
+cả hai chỉ nhận link repo công khai, không có ngữ cảnh thảo luận
+trước đó, đúng tinh thần "đọc lại như người chưa từng tham gia dự
+án". Audit phát hiện 9 lỗi tài liệu (đã vá) và 23 quyết định kỹ
+thuật còn treo (đã đưa vào PENDING_DECISIONS.md làm registry bắt
+buộc resolve trước khi code từng khu vực liên quan). Hình thức
+thực hiện khác kế hoạch ban đầu (không "nghỉ vài ngày") nhưng đạt
+đúng mục đích: phát hiện giả định ngầm mà chính tác giả không tự
+thấy được.
 
 Đề xuất chưa xử lý, dành cho v1.1 trở đi: Decision Log
-(docs/11_Decisions/) — ghi lịch sử các đề xuất/quyết định không
-nhất thiết thành ADR (ngày, ai đề xuất, đã review chưa, có thành
-ADR không, đã huỷ chưa). Chưa tạo thư mục này ở v1.0, vì đây là
-thay đổi cấu trúc tài liệu, không nên chèn vội vào cuối một sprint.
+(docs/11_Decisions/).
