@@ -1,7 +1,7 @@
 # Configuration
 
 [SOURCE OF TRUTH]
-Status: Approved
+Status: Frozen
 
 Dữ liệu cấu hình sống trong Workspace — độc lập với vòng đời bất kỳ Live Session nào, tái sử dụng giữa nhiều phiên (Mission 6, Philosophy #3, ADR-0007).
 

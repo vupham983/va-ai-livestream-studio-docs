@@ -1,7 +1,7 @@
 # Queue
 
 [SOURCE OF TRUTH]
-Status: Approved
+Status: Frozen
 
 Cơ chế hàng đợi dùng khi một module cần xử lý tuần tự các mục việc trong phạm vi một phiên — khác Event (tồn tại tức thời), Queue giữ một danh sách đang chờ xử lý.
 

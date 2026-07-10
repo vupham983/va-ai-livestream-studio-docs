@@ -1,7 +1,7 @@
 # Runtime Data
 
 [SOURCE OF TRUTH]
-Status: Approved
+Status: Frozen
 
 Dữ liệu runtime tổng quát — tồn tại trong phạm vi một Live Session đang chạy, thuộc Aggregate Boundary (chương 02, ADR-0007). File này liệt kê từng loại Runtime Data theo module sở hữu; STATE.md tổng hợp toàn bộ Runtime Data này thành một bức tranh runtime duy nhất của phiên (xem STATE.md), QUEUE.md mô tả riêng cơ chế hàng đợi khi cần xử lý tuần tự.
 

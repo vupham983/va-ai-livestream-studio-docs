@@ -1,7 +1,7 @@
 # Snapshot
 
 [SOURCE OF TRUTH]
-Status: Approved
+Status: Frozen
 
 Bản chụp trạng thái Runtime Data tại một thời điểm, dùng để phục hồi hoặc lưu trữ sau khi Live Session Ended hoặc khi Engine Process crash (chương 07 — Failure Recovery).
 

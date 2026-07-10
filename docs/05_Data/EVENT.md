@@ -1,7 +1,7 @@
 # Event
 
 [SOURCE OF TRUTH]
-Status: Approved
+Status: Frozen
 
 Đơn vị giao tiếp duy nhất giữa các module, truyền qua Event Bus (ADR-0004). File này mô tả hình dạng và vòng đời của Event — luồng đi của nó (module nào gửi, module nào nhận) thuộc 02_Architecture/chapters/04_data_flow.md, không lặp ở đây.
 

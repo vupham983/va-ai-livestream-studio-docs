@@ -1,7 +1,7 @@
 # State
 
 [SOURCE OF TRUTH]
-Status: Approved
+Status: Frozen
 
 Trạng thái hiện tại của một Live Session đang chạy — sống trong Engine Process, được UI Process nhận qua IPC dưới dạng bản phản chiếu (mirror), không giữ bản sao độc lập (chương 05 — Runtime Model).
 

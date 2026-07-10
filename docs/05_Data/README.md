@@ -1,7 +1,7 @@
 # 05_Data
 
 [CHỈ THAM CHIẾU]
-Status: Approved
+Status: Frozen
 
 Bản đồ các loại dữ liệu trong hệ thống — vòng đời, ai ghi, ai đọc, có persist hay không. Đây là SoT về vòng đời dữ liệu, để 04_Modules không phải lặp lại mô tả state ở từng module (DOCUMENTATION_SYSTEM.md mục 3).
 

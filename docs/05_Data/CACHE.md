@@ -1,7 +1,7 @@
 # Cache
 
 [SOURCE OF TRUTH]
-Status: Approved
+Status: Frozen
 
 Dữ liệu lưu tạm để tối ưu hiệu năng — không bao giờ là nguồn sự thật duy nhất, luôn có thể xây dựng lại từ State hoặc Configuration (05_Data/README.md — Nguyên tắc phân loại #3).
 
