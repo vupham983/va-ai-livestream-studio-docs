@@ -1,19 +1,33 @@
-# Integration — TTS
+# TTS — INTEGRATION
 
-**Vai trò:** Mô tả đặc tính tích hợp với TTS (không mô tả logic nghiệp vụ), theo cấu trúc trong _INTEGRATION_TEMPLATE.md.
-
-**SOURCE OF TRUTH**
+[SOURCE OF TRUTH]
+Status: Frozen
 
 ## Purpose
 
-## Auth model
+Cung cấp dịch vụ chuyển văn bản thành giọng nói cho module Voice — có thể nhiều provider (Edge, XTTS, ElevenLabs...), Voice không lộ chi tiết provider nào đang chạy ra module khác (04_Modules/voice/MODULE.md, 04_Modules/ai_host/MODULE.md).
 
-## Rate limits/constraints
+## Auth Model
 
-## Failure behavior
+Tuỳ provider: một số miễn phí không cần auth (Edge TTS), một số cần API key trả phí (ElevenLabs). Mỗi provider cụ thể có Auth Model riêng, quản lý bởi module Voice, không lộ ra module khác.
 
-## Data exchanged
+## Rate Limits/Constraints
 
-## Related module
+Tuỳ provider — cần tra cứu tài liệu chính thức từng provider cụ thể trước khi triển khai, không đoán số chung cho tất cả.
+
+## Failure Behavior
+
+Provider lỗi/timeout xử lý theo 04_Modules/voice/MODULE.md — Failure Modes/Recovery Strategy (có thể chuyển provider dự phòng nếu đã cấu hình).
+
+## Data Exchanged
+
+- Gửi: văn bản cần chuyển giọng nói.
+- Nhận: audio đã tổng hợp.
+
+## Related Module
+
+04_Modules/voice/MODULE.md
 
 ## Related ADRs
+
+Không có — chọn provider mặc định cho MVP chờ quyết định khi triển khai.

@@ -1,19 +1,33 @@
-# Integration — YouTube
+# YouTube — INTEGRATION
 
-**Vai trò:** Mô tả đặc tính tích hợp với YouTube (không mô tả logic nghiệp vụ), theo cấu trúc trong _INTEGRATION_TEMPLATE.md.
-
-**SOURCE OF TRUTH**
+[SOURCE OF TRUTH]
+Status: Frozen
 
 ## Purpose
 
-## Auth model
+Kết nối hệ thống với YouTube Live để nhận sự kiện (comment, super chat, lượt xem) và gửi luồng phát trực tiếp.
 
-## Rate limits/constraints
+## Auth Model
 
-## Failure behavior
+Xác thực qua YouTube Data API/Live Streaming API (OAuth) — cơ chế cụ thể cần tra cứu tài liệu chính thức trước khi triển khai.
 
-## Data exchanged
+## Rate Limits/Constraints
 
-## Related module
+Chưa xác định — cần tra cứu tài liệu chính thức YouTube trước khi triển khai.
+
+## Failure Behavior
+
+Xử lý theo nguyên tắc chung ở 04_Modules/platform_adapter/MODULE.md.
+
+## Data Exchanged
+
+- Nhận: comment, super chat, lượt xem.
+- Gửi: luồng hình ảnh/âm thanh đã ghép từ Scene.
+
+## Related Module
+
+04_Modules/platform_adapter/MODULE.md
 
 ## Related ADRs
+
+Không có.

@@ -1,19 +1,33 @@
-# Integration — Facebook
+# Facebook — INTEGRATION
 
-**Vai trò:** Mô tả đặc tính tích hợp với Facebook (không mô tả logic nghiệp vụ), theo cấu trúc trong _INTEGRATION_TEMPLATE.md.
-
-**SOURCE OF TRUTH**
+[SOURCE OF TRUTH]
+Status: Frozen
 
 ## Purpose
 
-## Auth model
+Kết nối hệ thống với Facebook Live để nhận sự kiện (comment, reaction, lượt xem) và gửi luồng phát trực tiếp.
 
-## Rate limits/constraints
+## Auth Model
 
-## Failure behavior
+Xác thực qua Facebook Graph API (OAuth token cho Page/tài khoản livestream) — cơ chế cụ thể cần tra cứu tài liệu chính thức Facebook Live API trước khi triển khai.
 
-## Data exchanged
+## Rate Limits/Constraints
 
-## Related module
+Chưa xác định — cần tra cứu tài liệu chính thức Facebook trước khi triển khai.
+
+## Failure Behavior
+
+Xử lý theo nguyên tắc chung ở 04_Modules/platform_adapter/MODULE.md.
+
+## Data Exchanged
+
+- Nhận: comment, reaction, lượt xem.
+- Gửi: luồng hình ảnh/âm thanh đã ghép từ Scene.
+
+## Related Module
+
+04_Modules/platform_adapter/MODULE.md
 
 ## Related ADRs
+
+Không có.
