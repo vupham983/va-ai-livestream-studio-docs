@@ -2,7 +2,7 @@
 
 **Applies-to:** v0.x
 
-Status: Draft
+Status: Accepted
 
 ## Context
 

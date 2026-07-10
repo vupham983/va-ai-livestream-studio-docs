@@ -17,6 +17,12 @@ Mục lục ADR. ADR bất biến sau khi Accepted — sửa quyết định = t
 | ADR-0006 | Docs versioning qua ADR | Accepted | Toàn bộ ADR (header Applies-to: v0.x) |
 | ADR-0007 | Live Session là Runtime Aggregate Root | Accepted | ADR-0001; 02_Architecture/chapters/02_core_domain_live_session.md; 04_Modules/_MODULE_TEMPLATE.md; 05_Data/STATE.md, SNAPSHOT.md |
 | ADR-0008 | Mở rộng _MODULE_TEMPLATE.md từ 10 mục lên 15 mục | Accepted | DOCUMENTATION_SYSTEM.md mục 3; toàn bộ 04_Modules/*/MODULE.md |
+| ADR-0009 | Transition table đầy đủ cho Live Session state machine | Accepted | ADR-0001; 05_Data/STATE.md |
+| ADR-0010 | Command/Event/Query/Stream taxonomy | Accepted | ADR-0004; 05_Data/EVENT.md; 05_Data/MESSAGE_CATALOG.md (entry condition Sprint 1) |
+| ADR-0011 | Event/Stream delivery semantics | Accepted | ADR-0004; 05_Data/QUEUE.md; ADR-0009 (Command idempotency) |
+| ADR-0012 | Producer Registry (single-producer enforcement) | Accepted | ADR-0004; 04_Modules/comment_engine/MODULE.md; 04_Modules/platform_adapter/MODULE.md |
+| ADR-0013 | Live Session Aggregate mutation model | Accepted | ADR-0007 (không Supersede — làm rõ thuật ngữ) |
+| ADR-0014 | Human Override Semantics | Accepted | 04_Modules/*/MODULE.md (Override Support); CODE_GAP_ANALYSIS.md |
 
 Chưa có ADR nào bị Superseded tính đến thời điểm này.
 

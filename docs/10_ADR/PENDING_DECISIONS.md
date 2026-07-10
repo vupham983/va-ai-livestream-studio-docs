@@ -6,18 +6,18 @@ Status: Draft
 Danh sách quyết định kỹ thuật CHƯA được giải quyết ở Documentation Bible, phát hiện qua audit độc lập (2026-07-10). Mỗi mục PHẢI được giải quyết bằng một ADR trước khi bắt đầu code phần liên quan — không được code trước rồi suy ra quyết định.
 
 ## Bắt buộc trước khi code Live Session / Event Bus
-- Transition table đầy đủ cho state machine (mọi cặp state, precondition, side effect, idempotency) — không chỉ sơ đồ khái quát.
-- Mô hình phân loại Command/Event/Query/Stream — hiện gộp chung "Event", cần tách rõ trước khi code Event Bus.
-- Event delivery semantics: at-least-once/exactly-once, ordering, retry, dead-letter, backpressure, bounded queue.
-- Cơ chế thực thi "một event một nguồn phát" (registry, namespace) — ai là producer thật khi nhiều Platform Adapter cùng phát event chuẩn hoá giống nhau.
-- Live Session là Aggregate thật (mọi mutation qua command của nó) hay chỉ là process/lifecycle coordinator — hai mô hình khác nhau, cần chọn một trước khi code.
+- Transition table đầy đủ cho state machine — Resolved, xem ADR-0009.
+- Mô hình phân loại Command/Event/Query/Stream — Resolved, xem ADR-0010.
+- Event delivery semantics — Resolved, xem ADR-0011.
+- Cơ chế thực thi "một event một nguồn phát" — Resolved, xem ADR-0012.
+- Live Session là Aggregate thật hay chỉ process/lifecycle coordinator — Resolved, xem ADR-0007 + ADR-0013.
 
 ## Bắt buộc trước khi code Engine/UI Process
 - Giao thức IPC cụ thể (đã ghi nhận ở chương 05, nhắc lại ở đây để không bị quên).
 - Ai là process supervisor khi Engine Process crash — UI, hay cần process thứ ba (watchdog)?
 - Concurrency model của Engine Process (event loop/thread pool, CPU-bound vs I/O-bound).
-- Override có huỷ (cancel) task đang chạy dở hay để chạy xong mới dừng?
-- Override là global hay per-module, và protocol chung để mọi module tuân theo nhất quán.
+- Override có huỷ (cancel) task đang chạy dở hay để chạy xong mới dừng — Resolved, xem ADR-0014.
+- Override là global hay per-module, và protocol chung để mọi module tuân theo nhất quán — Resolved, xem ADR-0014.
 
 ## Bắt buộc trước khi code Workspace/Persistence
 - Kiến trúc lưu trữ: database hay file-based, atomic save, schema version, migration, backward compatibility.
