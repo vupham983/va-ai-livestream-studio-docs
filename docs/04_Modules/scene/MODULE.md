@@ -45,6 +45,7 @@ Quản lý cấu hình hiển thị/âm thanh (bố cục camera, overlay, tham 
 ## Downstream Consumers
 
 - Live Session — nhận sự kiện Scene active để cập nhật Runtime State của phiên (chương 02).
+- Platform Adapter — nhận đầu ra hiển thị/âm thanh đã ghép từ Scene để gửi (broadcast) lên nền tảng livestream (đã xác nhận ở platform_adapter/MODULE.md, Upstream Dependencies).
 - Health Monitor, Analytics — tiêu thụ sự kiện Scene ở mức giám sát/thống kê, không thuộc luồng nghiệp vụ chính (04_Modules/README.md).
 
 ## Configuration State
