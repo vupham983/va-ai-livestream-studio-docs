@@ -1,7 +1,7 @@
 # Implementation Order
 
 [SOURCE OF TRUTH]
-Status: Approved
+Status: Frozen
 
 Chi tiết hoá TECHNICAL_ROADMAP.md thành sprint kỹ thuật cụ thể.
 

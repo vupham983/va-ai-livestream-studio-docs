@@ -1,7 +1,7 @@
 # 11_Implementation
 
 [CHỈ THAM CHIẾU]
-Status: Approved
+Status: Frozen
 
 Kế hoạch triển khai kỹ thuật chi tiết — khác TECHNICAL_ROADMAP.md (09_Roadmap, chỉ nêu thứ tự lớn theo module), nhóm này chia nhỏ thành sprint/task cụ thể, dùng để bắt đầu code thật.
 

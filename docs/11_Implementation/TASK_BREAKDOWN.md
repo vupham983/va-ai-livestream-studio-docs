@@ -1,7 +1,7 @@
 # Task Breakdown
 
 [SOURCE OF TRUTH]
-Status: Approved
+Status: Frozen
 
 Nguyên tắc chia nhỏ sprint thành task — không liệt kê task cụ thể ở đây (sẽ làm khi bắt đầu từng sprint thật, tránh lập kế hoạch chi tiết cho việc chưa tới).
 

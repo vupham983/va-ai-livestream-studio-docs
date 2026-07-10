@@ -1,7 +1,7 @@
 # Coding Workflow
 
 [SOURCE OF TRUTH]
-Status: Approved
+Status: Frozen
 
 Quy trình làm việc hằng ngày khi triển khai code — áp dụng cùng mô hình Draft → Review → Approved → Frozen đã dùng cho tài liệu (ARCHITECTURE_GOVERNANCE.md), nhưng ở cấp độ code.
 

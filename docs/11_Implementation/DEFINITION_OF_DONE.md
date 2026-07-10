@@ -1,7 +1,7 @@
 # Definition of Done
 
 [SOURCE OF TRUTH]
-Status: Approved
+Status: Frozen
 
 ## Một task được coi là Done khi
 1. Code khớp đúng Public Contract/Boundaries của module tương ứng (04_Modules/*/MODULE.md).
