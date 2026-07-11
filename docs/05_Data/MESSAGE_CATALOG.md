@@ -36,6 +36,13 @@ Với module chỉ có đúng MỘT instance trong toàn hệ thống tại mộ
 | SessionError | Event | Producer: Live Session | session_id, fault_reason |
 | SessionRecovered | Event | Producer: Live Session | session_id, timestamp |
 
+## Platform Adapter — Streamer (04_Modules/platform_adapter/MODULE.md, server/core/platform_adapter_streamer.js)
+
+| Message type | Kind | Target/Producer | Payload tóm tắt |
+|---|---|---|---|
+| StartStream | Command | Target: Platform Adapter (streamer) | rtmpUrl, segmentFiles |
+| StopStream | Command | Target: Platform Adapter (streamer) | — |
+
 ## Comment / Platform Adapter (04_Modules/platform_adapter, comment_engine/MODULE.md)
 
 | Message type | Kind | Target/Producer | Payload tóm tắt |
@@ -91,7 +98,9 @@ Với module chỉ có đúng MỘT instance trong toàn hệ thống tại mộ
 | OverrideGracefulStop | Command | Target: module cụ thể được chỉ định | module_id/target |
 | OverrideForceStop | Command | Target: module cụ thể được chỉ định (mọi module PHẢI hỗ trợ, ADR-0014) | module_id/target |
 | OverrideCancel | Command | Target: module sở hữu Queue cụ thể | module_id/target, item_id (việc cần huỷ khỏi hàng đợi) |
-| OverrideCompleted | Event | Producer: module vừa xử lý xong Override (báo cleanup đã hoàn tất — ADR-0014) | module_id, override_type, kết quả cuối (completed/failed) |
+| override.\<module_name\>.completed (VD: override.platform_adapter_streamer.completed) | Event | Producer: đúng module vừa xử lý xong Override — MỖI module namespace riêng theo Quy tắc đặt tên ở trên, KHÔNG dùng chung một tên PascalCase, vì nhiều module cùng emit "hoàn tất override" sẽ vi phạm single-producer-per-event-type (ADR-0012) nếu dùng chung tên | module_id, override_type, kết quả cuối (completed/failed) |
+
+Quyết định đặt tên (2026-07-11): ban đầu dự định OverrideCompleted dùng chung một tên cho mọi module, nhưng phát hiện xung đột với ADR-0012 khi module thứ hai (sau platform_adapter_streamer) cũng cần emit sự kiện tương tự — chọn namespace theo module (nhất quán cách ADR-0012 đã xử lý comment.<platform>.raw), không nới lỏng ADR-0012.
 
 Ghi chú: outcome tức thời của Command Override (accepted/already_stopped/not_supported/not_found/failed) KHÔNG phải message type riêng — đó là giá trị trả về đồng bộ của chính Command (Delivery/Execution/Outcome, ADR-0011), định nghĩa đầy đủ ở ADR-0014, không lặp lại ở Catalog này.
 
